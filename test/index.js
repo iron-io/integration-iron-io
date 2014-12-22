@@ -16,7 +16,10 @@ describe('Iron IO', function(){
   beforeEach(function(){
     settings = {
       projectId: '534bf145c629690009000039',
-      token: 'uwa4ZE1ykvC5aHgsrkC2HAPJw2o'
+      token: 'uwa4ZE1ykvC5aHgsrkC2HAPJw2o',
+      apiVersion: '2',
+      hostEndpoint: 'https://mq-aws-us-east-1.iron.io:443',
+      port: '443'
     };
     iron = new IronIO(settings);
     test = Test(iron, __dirname);
